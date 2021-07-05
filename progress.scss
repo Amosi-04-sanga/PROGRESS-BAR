@@ -1,0 +1,51 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center; // vertically.
+    align-items: center; // horizontally.
+
+}
+
+.progress {
+
+    &-wrapper {
+        width: 250px;
+        background-color: transparent;
+    }
+    
+    &__bar {
+        height: 20px;
+        background-color: green;
+    }
+    
+    &__bar-wrapper {
+        border: 1px solid grey;
+    }
+
+}
+
+#btn {
+    padding: .4rem .6rem;
+    display: block;
+    margin: 30px auto;
+    background-color: #000;
+    color: hotpink;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+#btn:hover {
+    border: 1px solid hotpink;
+    transition: border .2s ease-in;
+}
+
